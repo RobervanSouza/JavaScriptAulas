@@ -57,4 +57,45 @@ if (sexo === 'masculino') {
   pesoIdeal = 21 * Math.pow(altura, 2);
 }
 
-console.log(`Seu peso ideal e : ${pesoIdeal.toFixed(3)}Kg `)// tofixed e casas decimais 
+//console.log(`Seu peso ideal e : ${pesoIdeal.toFixed(3)}Kg `)// tofixed e casas decimais 
+//3 ######################################################################################
+// diferença de horario entre um pais e outro, hora na frança e 5+ que no brasil
+let brasilhoras = 22;
+let minutos = 32;
+let horaFranca = brasilhoras + 5;
+if(horaFranca > 24){
+  horaFranca = horaFranca - 24;
+} 
+
+horaFranca > 24 ? horaFranca = horaFranca - 24 : horaFranca;
+
+//console.log(horaFranca)
+//3 #####################################################################################
+
+//salario, diminua todos os gastos e o total de gastos
+
+
+let salario = 1000
+let escola= 200
+let curso = 300
+let energia = 400
+let totalgatos = escola + curso + energia;
+let retoSalario = salario - totalgatos;
+//console.log('Resto Salario',retoSalario)
+//console.log('total de gastos',totalgatos)
+
+// 2 outra forma
+let salarios = 2002
+let gastos = {
+  'cursor':200,
+  'tv':300,
+  'internet':300,
+}
+// console.log(Object.values(gastos)) retorna os objetos do array
+ const total = Object.values(gastos).reduce((a, b)=> a + b) // reduz o array, a e b e para somas e deixa um numero so, soma de um em um
+ const resto = salarios - total
+  //console.log(resto)
+//3 #################################################################################
+
+
+
