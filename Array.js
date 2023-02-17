@@ -64,7 +64,7 @@ function somaArray(array) {
  
  } return soma;
 }
-//console.log(somaArray([3,4,5,6,]))
+console.log(somaArray([3,4,5,6,]))
 //3 #######################################################################
 
 // calcular valores de uma matriz a forma e 0,0 e 1,1 e 2,2 soma a diagonal e um menos o outro
@@ -77,12 +77,37 @@ let direita = 0;
     }
     return Math.abs([esquerda - direita]);// o math e arredondamento, o abs e numero absoluto, estão de 3-7=-4 o abs deixa 4
 }
+/*
 console.log(matriz([
   /*0 */ [1,2,9],
   /*1 */ [4,5,6],
-  /*2 */ [7,8,9],
-]))
+  /*2 */ [7,8,9]
+//]))
 
 // direita += array[i] pega o primeiro array [1,2,9]o sendo [array.length - 1 - index ]  pega o index  9 do array[1,2,9]como então fica assim  [array.length - 1 - index ]  array.length pega o tamanho do array, -1 diminui - do array que e 9, deppois o - 1 - index e diminui o index de cada vez
 
 //3##################################################################################################################
+// escada 
+/*
+   $$#
+   $##
+   ### 
+*/
+function escada(m){
+    let espaco = '';
+    let simbolo = '#';
+    let linha = m - 1;
+    for (let linhaIndex = 0; linhaIndex < m; linhaIndex += 1) { // esse for exeecuta as linhas uma linha de cada vez ai passa para o for de baixo 
+        for (let colunaIndex = 0; colunaIndex < m; colunaIndex += 1) { // aqui ele anda cada coluna de cada vez que e executado
+            if (colunaIndex < linhaIndex) {
+                espaco += ' ';
+            } else {
+                espaco += simbolo;
+            }
+        }
+      //  console.log(espaco);
+        espaco = '';
+        linha -= 1;
+    }
+}
+//escada(8)
