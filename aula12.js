@@ -120,7 +120,10 @@ alturas.forEach((altura) => { //foreach passa por todos os itens do array e perg
 
   if (altura < media) menorMedia += 1;
 })
+
+console.log(Object.values(menorMedia))
 console.log(`menor altura = ${menorAltura}`)
 console.log(`Maior  alturas = ${ maiorAltura }`)
 console.log(`Media de alturas = ${ media }`)
 console.log(` quantidade de pessoa que tem altura menor que a media= ${menorMedia }`)
+
