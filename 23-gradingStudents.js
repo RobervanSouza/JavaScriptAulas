@@ -1,10 +1,10 @@
 function gradingStudents(grades) {
   // Write your code here
-  for(let index = 0; index < grades.length; index += 1){
-    if(grades[index] >= 38){
-      if(grades[index] % 5 === 3){
+  for(let index = 0; index < grades.length; index += 1){ // para cada um dos elementos
+    if(grades[index] >= 38){ // se for mair vaa para outro se não  ja si fora
+      if(grades[index] % 5 === 3){//  divide por 5 se o resto ===3 então aumenta 2
         grades[index] += 2;
-      } else if(grades[index] % 5 === 4){
+      } else if(grades[index] % 5 === 4){ // se dividir por 5 = 4 então acrescenta 1
         grades[index] += 1;
       }
     }

@@ -11,15 +11,15 @@ function formingMagicSquare(s) {
     [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
   ];
 
-  let maxValue = Number.MAX_VALUE;
-  for(let index = 0; index < magicSquares.length; index += 1){
-    let min = 0;
-    for(let line = 0; line < s.length; line += 1){
-      for(let column = 0; column < s.length; column += 1){
-        min += Math.abs(s[line][column] - magicSquares[index][line][column]);
-      }
+  let maxValue = Number.MAX_VALUE; // recebe o numero maximo
+  for(let index = 0; index < magicSquares.length; index += 1){ // percorre o array o     primerio array [[4, 9, 2], [3, 5, 7], [8, 1, 6]],
+    let min = 0; // inicia sempre em zero
+    for (let line = 0; line < s.length; line += 1) {// percorre esse aray[4, 9, 2] nas posicões
+      for(let column = 0; column < s.length; column += 1){//  percorre as colunas 0,0. 1,1. 2.2 
+        min += Math.abs(s[line][column] - magicSquares[index][line][column]);// s[line][column] pega a linha e a coluna e cada vez que anda diminui magicSquares
+      } 
     }
-    maxValue = Math.min(maxValue, min);
+    maxValue = Math.min(maxValue, min); // compara o menor valor devolve o menor
   }
   return maxValue;
 }

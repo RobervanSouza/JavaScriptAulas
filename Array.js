@@ -64,7 +64,7 @@ function somaArray(array) {
  
  } return soma;
 }
-console.log(somaArray([3,4,5,6,]))
+console.log(somaArray([3,4,5,6,]), 'gdfgdf')
 //3 #######################################################################
 
 // calcular valores de uma matriz a forma e 0,0 e 1,1 e 2,2 soma a diagonal e um menos o outro
